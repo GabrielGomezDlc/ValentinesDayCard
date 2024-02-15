@@ -72,6 +72,36 @@ body {
     top:0;
 
 }
+.background_images {
+    position: absolute;
+    width: 350px; /* Tamaño del cuadro */
+    height: 350px; /* Tamaño del cuadro */
+    border: 2px solid #A60657; /* Borde del cuadro */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 2px;
+    z-index: -1; /* Asegura que esté detrás de la imagen principal */
+    left: 40px; /* Ajuste de posición hacia la derecha */
+    top: 40px; /* Ajuste de posición hacia la izquierda */
+}
+
+.small_image {
+    width: calc(50% - 4px); /* Tamaño de las imágenes pequeñas */
+    height: calc(50% - 4px); /* Tamaño de las imágenes pequeñas */
+    object-fit: cover;
+    border: 2px solid #A60657; /* Borde de las imágenes */
+    box-sizing: border-box;
+}
+
+.inside_img {
+    position: relative;
+    z-index: 1; /* Asegura que la imagen principal esté sobre el cuadro */
+    right: 25px; /* Ajuste de posición hacia la derecha */
+
+}
+
 .valentines_card audio {
     display: none;
 }
